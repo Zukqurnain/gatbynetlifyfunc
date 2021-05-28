@@ -1,4 +1,4 @@
-var stripe = require('stripe')("sk_test_51FbabNKoQd0YnjwHPpW4Yn6f2R4FMZsmwQIOMbejpG2JlusIxRFILCW6eBknaJRoVB7IhoPoo30iWxrrYiRmIeqw00pfQYu41m");
+var stripe = require('stripe')(process.env.STRIPE_SECRET_KEY);
 
 
 export async function handler(event, context, callback) {
